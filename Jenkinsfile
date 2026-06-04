@@ -9,7 +9,7 @@ pipeline {
             }
         }
         stage('Example Test') {
-            agent { docker 'openjdk:8-jre' }
+            agent { docker 'eclipse-temurin:17-jre' }
             steps {
                 echo 'Hello, JDK'
                 sh 'java -version'
